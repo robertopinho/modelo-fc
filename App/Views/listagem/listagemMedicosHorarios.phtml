@@ -1,0 +1,38 @@
+<div class="col-8">
+    <?php foreach ($this->view->medicos as $medicos => $dados) { ?>
+        <div class="mt-5">
+            <div class="d-flex">
+                <div class="mr-auto">
+                    <h4 id="titulo"><?= $dados['nome'] ?></h4>
+                </div>
+
+
+                <form action="editarMedico" method="get">
+
+                    <a id="botao" href="editar_medico" class="btn-sm">Editar cadastro</a>
+                </form>
+
+                <form action="confighorarios" method="get">
+                    <a id="botao" href="confighorarios" class="btn-sm">Configurar horários</a>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+            <div id="listaHorario" class="btn-sm mr-2">16/11/2020 às 07:00</div>
+        </div>
+    <?php } ?>
+
+</div>
